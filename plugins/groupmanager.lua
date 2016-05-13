@@ -185,10 +185,10 @@ end
 return {
     patterns = {
         '^#(setname) (.*)$',
-        '^#(link)$',
-        '^#(newlink)$',
-        '^#(tosuper)$',
-        '^#(setdes) (.*)$',
+        --'^#(link)$',
+        --'^#(newlink)$',
+        --'^#(tosuper)$',
+        --'^#(setdes) (.*)$',
         "^#(rmv)$",
         "^#(rmv) (.*)$",
         "^#(add)$",

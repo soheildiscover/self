@@ -4,7 +4,7 @@ if msg.text == "علی" then
  return "؟>"
 end
 
-if msg.text == "" then
+if msg.text == "Torento" then
  return ""
 end
 
@@ -15,6 +15,7 @@ return {
  usage = "chat with robot",
  patterns = {
   "^علی$",
+  "^Torento$",
   }, 
  run = run,
     --privileged = true,

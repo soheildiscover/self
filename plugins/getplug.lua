@@ -12,7 +12,7 @@ end
 
 return {
   patterns = {
-  "^[Gg]etplug (.*)$"
+  "^#(getplug) (.*)$"
   },
   run = run
 }

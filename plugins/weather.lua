@@ -13,7 +13,7 @@ local function get_weather(location)
   local weather = json:decode(b)
   local city = weather.name
   local country = weather.sys.country
-  local temp = 'دمای شهر '..city..' هم اکنون '..weather.main.temp..' درجه سانتی گراد می باشد'
+  local temp = 'دمای شهر '..city..' الان '..weather.main.temp..'درجه سانتی گراده !!!'
   local conditions = 'شرایط فعلی آب و هوا : '
 
   if weather.weather[1].main == 'Clear' then
@@ -42,7 +42,7 @@ end
 return {
 
   patterns = {
-   "^#weather (.*)$",
+   "^[Ww]eather (.*)$",
     },
   run = run
 }

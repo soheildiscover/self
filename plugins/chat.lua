@@ -5,7 +5,7 @@ if msg.text == "علی" then
 end
 
 if msg.text == "Torento" then
- return ""
+ return "؟>"
 end
 
 end

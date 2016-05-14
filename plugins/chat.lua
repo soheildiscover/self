@@ -8,6 +8,10 @@ if msg.text == "Torento" then
  return "؟>"
 end
 
+if msg.text == "آیناز" then
+ return "من آیناز نیستم اسمم علیه"
+end
+
 end
 
 return {

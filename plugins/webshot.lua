@@ -50,7 +50,7 @@ return {
       "#webshot [url]: Take an screenshot of the web and send it back to you."
    },
    patterns = {
-      "^[Ww]ebshot (https?://[%w-_%.%?%.:/%+=&]+)$",
+      "^([Ww]ebshot) (https?://[%w-_%.%?%.:/%+=&]+)$",
    },
    run = run
 }

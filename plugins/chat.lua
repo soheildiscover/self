@@ -1,8 +1,4 @@
 local function run(msg)
- 
-if msg.text == "علی" then
- return "؟>"
-end
 
 if msg.text == "Torento" then
  return "؟>"
@@ -18,7 +14,7 @@ return {
  description = "Chat With Robot Server", 
  usage = "chat with robot",
  patterns = {
-  "^علی$",
+  "^آیناز$",
   "^Torento$",
   }, 
  run = run,

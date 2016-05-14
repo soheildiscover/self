@@ -129,7 +129,7 @@ local function run(msg, matches)
 	to_id = msg.to.id
   -- Show the available plugins
   if permissions(msg.from.id, msg.to.id, "plugins") then
-    if matches[1] == '#plugins' then
+    if matches[1] == 'plugins' then
       return list_plugins()
     end
 

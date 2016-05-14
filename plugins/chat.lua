@@ -4,8 +4,8 @@ if msg.text == "Torento" then
  return "؟>"
 end
 
-if msg.text == "آیناز" then
- return "من آیناز نیستم اسمم علیه"
+if msg.text == "@MrTorento" then
+ return "؟>"
 end
 
 end
@@ -14,7 +14,7 @@ return {
  description = "Chat With Robot Server", 
  usage = "chat with robot",
  patterns = {
-  "^آیناز$",
+  "^@MrTorento$",
   "^Torento$",
   }, 
  run = run,

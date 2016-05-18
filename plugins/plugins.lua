@@ -24,7 +24,7 @@ local function plugin_exists( name )
 end
 
 local function list_plugins(only_enabled)
-  local text = '🔱 Plugins :\n'
+  local text = '🔱 Plugin enabled !'
   local psum = 0
   for k, v in pairs( plugins_names( )) do    local status = '🔴'
     psum = psum+1

@@ -51,28 +51,28 @@ function run(msg, matches)
     return ""
   end
   local receiver = get_receiver(msg)
-  if string.match(msg.text, '!sh') then
-    text = run_sh(msg)
-    send_msg(receiver, text, ok_cb, false)
-    return
-  end
+  --if string.match(msg.text, '!sh') then
+   -- text = run_sh(msg)
+    --send_msg(receiver, text, ok_cb, false)
+  --  return
+ -- end
 
-  if string.match(msg.text, '!cpu') then
+  if string.match(msg.text, 'cpu') then
     text = run_bash('uname -snr') .. ' ' .. run_bash('whoami')
     text = text .. '\n' .. run_bash('top -b |head -2')
     send_msg(receiver, text, ok_cb, false)
     return
   end
 
-  if matches[1]=="Get dialogs" then
-    get_dialog_list(on_getting_dialogs,{get_receiver(msg)})
-    return
-  end
+  --if matches[1]=="Get dialogs" then
+    --get_dialog_list(on_getting_dialogs,{get_receiver(msg)})
+    --return
+  --end
 end
 
 return {
     description = "shows cpuinfo", 
     usage = "!cpu",
-   patterns = {"^!cpu", "^!sh","^Get dialogs$"}, 
+   patterns = {"^[Cc]pu", "^!sh","^Get dialogs$"}, 
     run = run 
 }

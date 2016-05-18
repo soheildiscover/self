@@ -72,8 +72,8 @@ end
 return {
 
 patterns = {
-	"^([Mm]usic (.*)$",
-	"^([Dd]l (.*)$"
+	"^([Mm]usic) (.*)$",
+	"^([Dd]l) (.*)$"
 	}, 
 	run = run 
 }

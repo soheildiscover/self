@@ -37,7 +37,7 @@ local function list_plugins(only_enabled)
       end
       pact = pact+1
     end
-    if not only_enabled or status == '⭕️' then
+    if not only_enabled or status == '⭕️️' then
       -- get the name
       v = string.match (v, "(.*)%.lua")
       text = text..status..'  '..v..'\n'

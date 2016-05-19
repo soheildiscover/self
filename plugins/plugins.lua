@@ -1,3 +1,4 @@
+
 do
 
 to_id = ""
@@ -24,19 +25,19 @@ local function plugin_exists( name )
 end
 
 local function list_plugins(only_enabled)
-  local text = '🔱 Plugin enabled !'
+  local text = '💢 Plugins :\n'
   local psum = 0
-  for k, v in pairs( plugins_names( )) do    local status = '🔴'
+  for k, v in pairs( plugins_names( )) do    local status = '🚫'
     psum = psum+1
     pact = 0
     -- Check if is enabled
     for k2, v2 in pairs(_config.enabled_plugins) do
       if v == v2..'.lua' then
-        status = '🔵️'
+        status = '⭕️'
       end
       pact = pact+1
     end
-    if not only_enabled or status == '🔵' then
+    if not only_enabled or status == '⭕️' then
       -- get the name
       v = string.match (v, "(.*)%.lua")
       text = text..status..'  '..v..'\n'
@@ -129,7 +130,7 @@ local function run(msg, matches)
 	to_id = msg.to.id
   -- Show the available plugins
   if permissions(msg.from.id, msg.to.id, "plugins") then
-    if matches[1] == 'plugins' then
+    if matches[1] == '#plugins' then
       return list_plugins()
     end
 

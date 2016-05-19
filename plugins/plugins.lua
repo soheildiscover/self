@@ -33,7 +33,7 @@ local function list_plugins(only_enabled)
     -- Check if is enabled
     for k2, v2 in pairs(_config.enabled_plugins) do
       if v == v2..'.lua' then
-        status = '⭕️'
+        status = '⭕️️'
       end
       pact = pact+1
     end
